@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+#74d434;
+#fcecc4;
+#4c8527;
+#9aad55;
+#ccbc94;
+#3e5a2c;
+
+*/
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 98vw;
+  margin: 0 auto;
+}
+
+.header-container {
+  width: 100%;
+  height: 10vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fbecc355;
+}
+/* backgrund image */
+.background-img {
+  width: auto;
+  height: 95vh;
+  background: url(/Assets/image/center-cirle.svg);
+  /* background: url(/Assets/image/soccer1802\ \(1\).svg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background-blur {
+  height: 95vh;
+  width: auto;
+  background-color: #3e592cdc;
+}
+
+/* main */
+.main-container {
+  width: auto;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.main-view h1 {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.main-view h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: #fbecc3;
+}
+
+.start-button {
+  padding: 1rem;
+  font-size: 2rem;
+  width: 30%;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  /* position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%); */
+  box-shadow: 0px 0px 3px 5px #3e592c;
+}
+
+.start-button a {
+  text-decoration: none;
+  color: #4c8527;
+}
+
+.start-button:hover {
+  filter: brightness(0.9);
+}
+
+.start-button:active {
+  transform: translateY(3px);
+  box-shadow: 0px 0px 1px 2px #3e592c;
+}
+
+@media only screen and (max-width: 780px) {
+  .main-container {
+    width: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5em;
+    /* justify-content: center;
+    justify-content: space-evenly;
+    position: relative; */
+  }
+  .header-container {
+    padding: 1.5rem;
+    flex-direction: column;
+  }
+
+  .logo-container {
+    margin-bottom: 0.5rem;
+  }
+/* 
+  .main {
+    height: fit-content;
+    margin-top: 10rem; 
+  } */
+
+  .background-blur {
+    height: fit-content;
+    background-color: #3e592cdc;
+  }
+
+  /* .main-view{
+
+  } */
+  .main-view h1 {
+    font-size: 5rem;
+    color: #fff;
+    padding-bottom: 2rem;
+  }
+
+  .main-view h3 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #fbecc3; 
+    padding-bottom: 6.5rem;
+  }
+
+  .start-button {
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    /* position: absolute;
+      bottom: 4rem;
+      left: 50%;
+      transform: translateX(-50%); */
+    box-shadow: 0px 0px 3px 5px #3e592c;
+  }
+
+  @media only screen and (max-width: 460px) {
+    .main-view{
+      padding: 1rem 0;
+    }
+    .main-view h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .main-view h3 {
+      font-size: 2rem;
+      font-weight: lighter;
+      color: #fbecc3;
+    }
+
+    .start-button {
+      padding: 0.5rem 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .main-view{
+      padding: .5rem .5rem;
+    }
+    .main-view h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .main-view h3 {
+      font-size: 1.5rem;
+      font-weight: lighter;
+      color: #fbecc3;
+    }
+
+    .start-button {
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+
